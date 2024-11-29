@@ -11,7 +11,7 @@ results !: any;
 constructor(private http: HttpClient) {}
 ngOnInit(): void {
 // Make the HTTP request:
-this.http.get('https://3000-polisenoric-meanimparan-85uzy8u1qpw.ws-eu116.gitpod.io/api').subscribe(data => {
+this.http.get('http://localhost:3000/api').subscribe(data => {
 // Read the result field from the JSON response.
 this.results = data;
 console.log(this.results)
